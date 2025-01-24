@@ -1,0 +1,9 @@
+.pytest_cache
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+credentials
+.pytest_cache
+
