@@ -89,8 +89,8 @@ jobs:
       - name: Create environment variable
         run: REACT_APP_MOVIE_API_URL=http://localhost:5000 
     
-      # - name: Build docker image
-      #   run: cd starter/frontend && docker build --build-arg=REACT_APP_MOVIE_API_URL --tag=mp-frontend:latest .
+      - name: Build docker image
+        run: cd starter/frontend && docker build --build-arg=REACT_APP_MOVIE_API_URL --tag=mp-frontend:latest .
     
-      # - name: Run docker container
-      #   run: cd starter/frontend && docker run --name mp-frontend -p 3000:3000 -d mp-frontend
+      - name: Run docker container
+        run: cd starter/frontend && docker run --name mp-frontend -p 3000:3000 -d mp-frontend
