@@ -206,7 +206,7 @@ When there are no linting errors, the output won't return any errors
 npm run lint
 
 # Expected output
-> frontend@1.0.0 lint
+> frontend@1.0.0 lintgit 
 > eslint .
 ```
 
