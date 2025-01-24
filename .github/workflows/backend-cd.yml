@@ -1,5 +1,5 @@
 # Workflow name
-name: Backend Continuous Deployment
+name: backend-cd
 
 on:
   workflow_dispatch:

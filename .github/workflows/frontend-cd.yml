@@ -65,7 +65,7 @@ jobs:
       run: cd starter/frontend && npm run test
 
   build:
-    needs: [Linting, Test]
+    needs: [linting, testing]
     runs-on: ubuntu-latest
 
     steps:
