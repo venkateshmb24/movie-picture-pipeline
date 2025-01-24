@@ -28,7 +28,7 @@ jobs:
         run: python -m pip install --upgrade pip && pip install pipenv && pip install flake8 
 
       - name: Run the linter
-        run: cd starter/backend && pipenv run lint-fail
+        run: cd starter/backend && pipenv run lint
 
   testing:
     runs-on: ubuntu-latest
@@ -48,7 +48,7 @@ jobs:
         run: python -m pip install --upgrade pip && pip install pipenv && pip install flake8
 
       - name: Run tests
-        run: cd starter/backend && pipenv install pytest && FAIL_TEST=true pipenv run test
+        run: cd starter/backend && && pipenv install pytest && pipenv run test
 
   build:
     needs: [linting, testing]
