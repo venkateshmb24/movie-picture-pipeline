@@ -1,5 +1,5 @@
 # Workflow name
-name: parallel-job-example
+name: frontend-ci-example
 
 # Triggers for the workflow
 on:
