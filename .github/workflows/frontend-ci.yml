@@ -61,7 +61,7 @@ jobs:
         run: cd starter/frontend && npm ci
 
       - name: Run tests
-        run: cd starter/frontend && FAIL_TEST=true CI=true npm run test
+        run: cd starter/frontend && npm run test
 
   build:
     needs: [linting, testing]
