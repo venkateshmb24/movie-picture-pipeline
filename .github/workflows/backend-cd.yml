@@ -58,7 +58,7 @@ jobs:
     
     defaults:
         run:
-          working-directory: backend
+          working-directory: starter/backend
     steps:
       - name: Checking Out the code from Repo
         uses: actions/checkout@v3
