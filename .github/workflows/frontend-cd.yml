@@ -104,6 +104,6 @@ jobs:
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
-          cd k8s
+          cd starter/frontend/k8s
           kustomize edit set image frontend=${{ steps.login-ecr.outputs.registry }}.dkr.ecr.us-east-1.amazonaws.com/frontend:$IMAGE_TAG
           kustomize build | kubectl apply -f -
