@@ -68,9 +68,6 @@ jobs:
     needs: [linting, testing]
     runs-on: ubuntu-latest
 
-    defaults:
-        run:
-          working-directory: starter/frontend
     steps:
       - name: Checking Out the code from Repo
         uses: actions/checkout@v3
